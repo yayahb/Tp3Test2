@@ -1,0 +1,149 @@
+﻿/* Reset some default styles */
+body, h1, h2, h3, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+li, ul {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Promo Section styling */
+.w3-container.w3-light-grey {
+    padding: 80px 16px;
+}
+
+    .w3-container.w3-light-grey h3 {
+        font-size: 36px;
+    }
+
+    .w3-container.w3-light-grey p {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .w3-container.w3-light-grey a.w3-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+/* Statistics Section styling */
+.w3-container.w3-dark-grey {
+    padding: 64px 16px;
+}
+
+.w3-quarter {
+    font-size: 24px;
+}
+
+/* Work Section styling */
+.w3-container#work {
+    padding: 80px 16px;
+}
+
+    .w3-container#work h3 {
+        font-size: 36px;
+    }
+
+    .w3-container#work p {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+/* Set a fixed height for the images in the Work Section */
+.w3-row-padding.w3-section .w3-col img {
+    width: 100%;
+    height: 200px; /* Adjust the height as per your preference */
+    object-fit: cover; /* Ensure the image covers the specified height */
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .w3-container#work {
+        padding: 60px 16px;
+    }
+}
+}
+
+/* Contact Section styling */
+.w3-container.w3-light-grey#contact {
+    padding: 80px 16px;
+}
+
+    .w3-container.w3-light-grey#contact h3 {
+        font-size: 36px;
+    }
+
+    .w3-container.w3-light-grey#contact p {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .w3-container.w3-light-grey#contact form input,
+    .w3-container.w3-light-grey#contact form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .w3-container.w3-light-grey#contact form button {
+        background-color: #333;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+/* Footer styling 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 64px 16px;
+}
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }*/
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 8px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .w3-container.w3-light-grey {
+        padding: 60px 16px;
+    }
+
+    .w3-container.w3-dark-grey {
+        padding: 48px 16px;
+    }
+
+    .w3-container#work {
+        padding: 60px 16px;
+    }
+
+    .w3-container.w3-light-grey#contact {
+        padding: 60px 16px;
+    }
+
+    footer {
+        padding: 48px 16px;
+    }
+}

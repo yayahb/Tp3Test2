@@ -1,0 +1,32 @@
+﻿@page
+@model Tp3Test2.Pages.CouvrePlancher.Index1Model
+@{
+	ViewData["Title"] = "CouvrePlancher";
+}
+<br />
+<table class="table">
+	<tr>
+		<td>ID</td>
+		<td>Type</td>
+		<td>MaterialPrice</td>
+		<td>mainDeouvrePrice</td>
+
+	</tr>
+<tbody>
+		@foreach(var item in Model.CvrPl)
+		{
+			<tr>
+				<td>@item.Id</td>
+				<td>@item.Type</td>
+				<td>@item.MaterialPrice</td>
+				<td>@item.MainDoeuvrePrice</td>
+				@*le bouton*@
+				<td>
+					<a class="btn btn-success btn-sm" href="">Afficher</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+
+
+</table>

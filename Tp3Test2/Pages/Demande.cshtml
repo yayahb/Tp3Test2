@@ -1,0 +1,43 @@
+﻿@page
+@model PlancherExpert.Pages.NewDemandeModel
+@{
+    ViewData["Title"] = "Nouvelle Demande";
+}
+<link rel="stylesheet" href="~/css/demandestyle.css">
+
+<div class="container mt-3">
+    <br />
+    <h2>Nouvelle Demande</h2>
+    <br />
+    <form method="post" action="/Facture">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label for="longueur">Longueur de la pièce (m):</label>
+            <input type="text" class="form-control" id="longueur" name="longueur" required>
+        </div>
+
+        <div class="form-group">
+            <label for="largeur">Largeur de la pièce (m):</label>
+            <input type="text" class="form-control" id="largeur" name="largeur" required>
+        </div>
+
+        <div class="form-group">
+            <label for="typeRevetement">Type de couvre-plancher:</label>
+            <select class="form-control" id="typeRevetement" name="nomProduit">
+                @foreach (var dmd in Model.dmdList)
+                {
+                    <option value=@dmd.Type>@dmd.Type</option>
+                }
+             
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Calculer</button>
+    </form>
+</div>
+
+<br />
+<br />
+ 
+
+

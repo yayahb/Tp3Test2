@@ -1,0 +1,90 @@
+﻿@page
+@model Tp3Test2.Pages.FactureModel
+@{
+}
+
+@{if (Model.valid)
+{
+        <h1>Facture</h1>
+        <hr />
+        <table class="table w-50">
+
+            <tr>
+                <td>
+                    Date :
+                </td>
+                <td>
+                    @DateTime.Now
+                </td>
+            </tr>
+        </table>
+
+
+        // another table
+
+        <table class="table table-dark">
+            <tr>
+                <td>
+                    Produit commande :
+                </td>
+                <td>
+                    @Model.nomProduit
+                </td>
+            </tr>
+
+            
+
+            <tr>
+                <td>
+                    Longeur :
+                </td>
+                <td>
+                    @Model.longeur Metre
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Largeur :
+                </td>
+                <td>
+                    @Model.largeur Metre
+                </td>
+            </tr>
+
+            <tr class="table-primary">
+                <td>
+                    Superficie :
+                </td>
+                <td>
+                    @Model.superficie M2
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    tva :
+                </td>
+                <td>
+                    15%
+                </td>
+            </tr>
+
+            <tr class="table-warning">
+                <td >
+                    Prix Total :
+                </td>
+                <td>
+                    @Model.prixTotal DH TTC
+                </td>
+            </tr>
+        </table>
+
+      
+    }
+
+    else
+    {
+        Response.Redirect("/index");
+    }
+}
